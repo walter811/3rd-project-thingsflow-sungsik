@@ -1,73 +1,151 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<a name="readme-top"></a>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## Description
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#환경셋팅">환경셋팅</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+  </ol>
+</details>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<!-- ABOUT THE PROJECT -->
 
-## Installation
+# [프리온보딩] 띵스플로우 백엔드 API 개발 프로젝트
 
-```bash
-$ npm install
+## About The Project
+
+### 프로젝트 개요
+
+#### 서비스 개요
+
+    - 게시글 CRUD, 현재 날씨 R 기능을 포함한 백엔드 API를 개발하는 개인 프로젝트
+
+- 개발 조건
+  - database 는 RDB 사용
+  - 규격에 맞게 개발
+  - API 명세서 작성
+  - 커서 페이지네이션 구현
+  - 현재 날씨는 외부 API 사용
+
+</br>
+
+- 책임
+
+| 김성식                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------- |
+| 게시물 리스트 가져오기</br>특정 게시물 정보 가져오기</br>게시물 생성하기</br>특정 게시물 수정하기<br>특정 게시물 |
+
+</br>
+
+- 개발 우선순위
+  1. 완성: 일정 준수 / API 정상 작동 / 코딩 컨벤션 / 코드패키지 구조
+     1. 2022.11.4.금요일 23:59 까지 API 완성
+     2. API 정상 작동 테스트: 토요일 17:00-24:00 까지
+     3. 토요일 내로 README 작성
+  2. 추가 구현: 자세한 내용은 아래에 있음
+     1. 금요일 이후에 구현
+- 추가 구현 목표
+  - Unit test
+
+</br>
+
+### ERD
+
+<img width="880" alt="ERD" src="https://user-images.githubusercontent.com/104759273/200097750-d6d99871-00be-4a5d-bc8e-119aab511c05.png">
+
+</br>
+
+### Built With
+
+- JavaScript
+- TypeScript
+- NestJS
+- TypeORM
+- Jest
+- Swagger
+
+</br>
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+```
+── app.module.ts
+├── boards
+│   ├── boards.controller.spec.ts
+│   ├── boards.controller.ts
+│   ├── boards.module.ts
+│   ├── boards.service.spec.ts
+│   ├── boards.service.ts
+│   └── dto
+│       └── createPost.request.dto.ts
+├── entities
+│   ├── Boards.ts
+│   └── Users.ts
+├── http-exception.filter.ts
+├── main.ts
+└── weather
+    ├── weather.controller.spec.ts
+    ├── weather.controller.ts
+    ├── weather.module.ts
+    ├── weather.service.spec.ts
+    └── weather.service.ts
 ```
 
-## Running the app
+</br>
 
-```bash
-# development
-$ npm run start
+### 환경셋팅
 
-# watch mode
-$ npm run start:dev
+- 프로젝트 셋업(Git repository & Server 초기세팅)
+  - server 셋팅
+    - TypORM 을 사용함
+  - Git repo
+    - 짧은 프로젝트 기간을 고려해 git flow 는 단순화했음: main-feature branch
+    - git 컨벤션: [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/)
 
-# production mode
-$ npm run start:prod
-```
+</br>
 
-## Test
+<!-- USAGE EXAMPLES -->
 
-```bash
-# unit tests
-$ npm run test
+## Usage
 
-# e2e tests
-$ npm run test:e2e
+[API 명세]
 
-# test coverage
-$ npm run test:cov
-```
+| METHOD | URL | 사용예시 | request | response |
+| ------ | --- | -------- | ------- | -------- |
 
-## Support
+</br>
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+<!-- ROADMAP -->
 
-## Stay in touch
+## Roadmap
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+#### 구현 목표
 
-## License
-
-Nest is [MIT licensed](LICENSE).
+- [x] 게시글 CRUD 기능 구현
+- [x] 현재 날씨 가져오기 기능 구현
+  - [ ] unit test
