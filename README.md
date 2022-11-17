@@ -137,7 +137,7 @@
 
 | METHOD | URL | 사용예시 | request | response |
 | ------ | --- | -------- | ------- | -------- |
-| GET | /api/boards/all | /api/boards/all | none | [</br>{id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>}</br>] |
+| GET | /api/boards/all | /api/boards/all | none | {</br>id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>}</br>] |
 
 </br>
 
