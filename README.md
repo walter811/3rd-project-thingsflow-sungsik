@@ -137,6 +137,7 @@
 
 | METHOD | URL | 사용예시 | request | response |
 | ------ | --- | -------- | ------- | -------- |
+| GET | /api/boards/all | /api/boards/all | none | [</br>{id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>}</br>] |
 
 </br>
 
@@ -148,4 +149,4 @@
 
 - [x] 게시글 CRUD 기능 구현
 - [x] 현재 날씨 가져오기 기능 구현
-  - [ ] unit test
+  - [x] unit test
