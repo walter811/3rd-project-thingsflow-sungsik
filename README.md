@@ -135,14 +135,14 @@
 
 [API 명세]
 
-| METHOD | URL | 사용예시 | request | response | 설명 |
-| ------ | --- | -------- | ------- | -------- | -- |
-| GET | /api/boards/all | /api/boards/all | none | [{</br>id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>}] | 전체 게시물 리스트를 가져오는 API (첫 요청 시)
-| GET | /api/boards/all/:postId | /api/boards/all/1 | none | [{</br>id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>}] | 전체 게시물 리스트를 가져오는 API (이후 요청 시)
-| GET | /api/boards/detail/:postId | /api/boards/detail/1 | none | {</br>id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>} | 특정 게시물의 상세 정보 가져오기
-| POST | /api/boards/:userId | /api/boards/1 | {</br>userId: number,</br>title: string,</br>content: string,</br>password: string</br>} | 200 | 게시물 생성하기 |
-| PATCH | api/boards/:postId | /api/boards/1 |  {</br>userId: number,</br>title: string,</br>content: string,</br>password: string</br>} | 204 | 특정 게시물 수정하기 |
-| DELETE | /api/boards/postId | /api/boards/1$password=? | none | 204 | 특정 게시물 삭제하기 |
+| METHOD | URL | 사용예시 | request | response |
+| ------ | --- | -------- | ------- | -------- |
+| GET | /api/boards/all | /api/boards/all | none | [{</br>id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>}] |
+| GET | /api/boards/all/:postId | /api/boards/all/1 | none | [{</br>id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>}] |
+| GET | /api/boards/detail/:postId | /api/boards/detail/1 | none | {</br>id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>} | 
+| POST | /api/boards/:userId | /api/boards/1 | {</br>userId: number,</br>title: string,</br>content: string,</br>password: string</br>} | 200 |
+| PATCH | api/boards/:postId | /api/boards/1 |  {</br>userId: number,</br>title: string,</br>content: string,</br>password: string</br>} | 204 |
+| DELETE | /api/boards/postId | /api/boards/1$password=? | none | 204 |
 
 
 
