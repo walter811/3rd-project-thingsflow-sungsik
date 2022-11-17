@@ -142,7 +142,7 @@
 | GET | /api/boards/detail/:postId | /api/boards/detail/1 | none | {</br>id: number,</br>title: string,</br>content: string,</br>password: string,</br>weather: string,</br>createdAt: Date,</br>updatedAt: Date,</br>deletedAt: Date</br>} | 
 | POST | /api/boards/:userId | /api/boards/1 | {</br>userId: number,</br>title: string,</br>content: string,</br>password: string</br>} | 200 |
 | PATCH | api/boards/:postId | /api/boards/1 |  {</br>userId: number,</br>title: string,</br>content: string,</br>password: string</br>} | 204 |
-| DELETE | /api/boards/postId | /api/boards/1$password=? | none | 204 |
+| DELETE | /api/boards/postId | /api/boards/1?password= | none | 204 |
 
 
 
